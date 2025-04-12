@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('works', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('museum')->nullable();
             $table->longText('description')->nullable();
             $table->year('creation_year');
             $table->string('image')->nullable();
