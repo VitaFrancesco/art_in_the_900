@@ -20,8 +20,9 @@ class MovementTableSeeder extends Seeder
             $newMovement->description = $movement['description'];
             $newMovement->start_year = $movement['start_year'];
             $newMovement->end_year = $movement['end_year'];
-            $newMovement->artists()->attach($movementsArray['artists']);
             $newMovement->save();
+            
+            $newMovement->artists()->attach($movement['artists']);
         }
     }
 }

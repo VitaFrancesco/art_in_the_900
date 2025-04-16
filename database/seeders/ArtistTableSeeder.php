@@ -13,7 +13,7 @@ class ArtistTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $artistsArray = config('movements');
+        $artistsArray = config('artists');
         foreach ($artistsArray as $artist) {
             $newArtist = new Artist();
             $newArtist->name = $artist['name'];

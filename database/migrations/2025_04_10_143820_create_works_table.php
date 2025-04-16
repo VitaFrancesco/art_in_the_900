@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('museum')->nullable();
             $table->longText('description')->nullable();
-            $table->year('creation_year');
+            $table->smallInteger('creation_year');
             $table->string('image')->nullable();
             $table->string('technique')->nullable();
             $table->string('width')->nullable();

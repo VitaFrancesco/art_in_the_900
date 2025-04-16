@@ -1,1 +1,116 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.active {
+    border-bottom: 2px solid currentColor;
+}
+
+.containerAuth {
+    max-width: 470px;
+    margin: auto;
+}
+
+.logo,
+.logout {
+    width: 300px;
+    flex-shrink: 2;
+}
+
+.logout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo>* {
+    display: flex;
+}
+
+.log_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    background-color: blueviolet;
+    color: white;
+    margin-right: -13px;
+    border-radius: 50%;
+}
+
+.search_input {
+    border: solid 1px #6c757d;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search_input:focus-visible {
+    outline: none;
+}
+
+.search_button {
+    border: solid 1px #6c757d;
+    padding: 5px 10px;
+    aspect-ratio: 1 / 1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.custom-arrow {
+    transform: rotate(-45deg);
+}
+
+.arrow_circle {
+    position: relative;
+    color: rgb(15, 15, 194);
+}
+
+.arrow_circle::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(198, 154, 240);
+    border-radius: 50%;
+    width: 26px;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 0;
+}
+
+.card {
+    transition: all 0.3s linear;
+    border-color: rgb(15, 15, 194);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .arrow_circle::before {
+    transform: scale(2.7);
+}
+
+.more {
+    position: relative;
+    z-index: 1;
+    color: rgb(15, 15, 194);
+}

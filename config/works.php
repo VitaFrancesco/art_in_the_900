@@ -2859,7 +2859,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 780,
         "height" => 760,
-        "artist_id" => 55,
+        "artist_id" => 53,
         "movement_id" => 10,
     ],
     [
@@ -2870,7 +2870,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 790,
         "height" => 770,
-        "artist_id" => 55,
+        "artist_id" => 53,
         "movement_id" => 10,
     ],
     [
@@ -2881,7 +2881,7 @@ return [
         "technique" => "Olio su tela",
         "width" => 800,
         "height" => 780,
-        "artist_id" => 55,
+        "artist_id" => 53,
         "movement_id" => 10,
     ],
     [
@@ -2892,7 +2892,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 810,
         "height" => 790,
-        "artist_id" => 55,
+        "artist_id" => 53,
         "movement_id" => 10,
     ],
     [
@@ -2903,7 +2903,7 @@ return [
         "technique" => "Olio su tela",
         "width" => 820,
         "height" => 800,
-        "artist_id" => 55,
+        "artist_id" => 53,
         "movement_id" => 10,
     ],
     [
@@ -2914,7 +2914,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 830,
         "height" => 810,
-        "artist_id" => 56,
+        "artist_id" => 54,
         "movement_id" => 10,
     ],
     [
@@ -2925,7 +2925,7 @@ return [
         "technique" => "Installazione interattiva",
         "width" => 840,
         "height" => 820,
-        "artist_id" => 56,
+        "artist_id" => 54,
         "movement_id" => 10,
     ],
     [
@@ -2936,7 +2936,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 850,
         "height" => 830,
-        "artist_id" => 56,
+        "artist_id" => 54,
         "movement_id" => 10,
     ],
     [
@@ -2947,7 +2947,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 860,
         "height" => 840,
-        "artist_id" => 56,
+        "artist_id" => 54,
         "movement_id" => 10,
     ],
     [
@@ -2958,7 +2958,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 870,
         "height" => 850,
-        "artist_id" => 56,
+        "artist_id" => 54,
         "movement_id" => 10,
     ],
     [
@@ -2969,7 +2969,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 880,
         "height" => 860,
-        "artist_id" => 57,
+        "artist_id" => 55,
         "movement_id" => 10,
     ],
     [
@@ -2980,7 +2980,7 @@ return [
         "technique" => "Installazione cinetica",
         "width" => 890,
         "height" => 870,
-        "artist_id" => 57,
+        "artist_id" => 55,
         "movement_id" => 10,
     ],
     [
@@ -2991,7 +2991,7 @@ return [
         "technique" => "Installazione multimediale",
         "width" => 900,
         "height" => 880,
-        "artist_id" => 57,
+        "artist_id" => 55,
         "movement_id" => 10,
     ],
     [
@@ -3002,7 +3002,7 @@ return [
         "technique" => "Tecnica mista",
         "width" => 910,
         "height" => 890,
-        "artist_id" => 57,
+        "artist_id" => 55,
         "movement_id" => 10,
     ],
     [
@@ -3013,7 +3013,7 @@ return [
         "technique" => "Tecnica mista su tela",
         "width" => 920,
         "height" => 900,
-        "artist_id" => 57,
+        "artist_id" => 55,
         "movement_id" => 10,
     ],
     [
@@ -3024,7 +3024,7 @@ return [
         "technique" => "Installazione sonora",
         "width" => 930,
         "height" => 910,
-        "artist_id" => 58,
+        "artist_id" => 56,
         "movement_id" => 11,
     ],
     [
@@ -3035,7 +3035,7 @@ return [
         "technique" => "Metallo e legno",
         "width" => 940,
         "height" => 920,
-        "artist_id" => 58,
+        "artist_id" => 56,
         "movement_id" => 11,
     ],
     [
@@ -3046,7 +3046,7 @@ return [
         "technique" => "Specchio e metallo",
         "width" => 950,
         "height" => 930,
-        "artist_id" => 58,
+        "artist_id" => 56,
         "movement_id" => 11,
     ],
     [
@@ -3057,7 +3057,7 @@ return [
         "technique" => "Metallo e legno",
         "width" => 960,
         "height" => 940,
-        "artist_id" => 58,
+        "artist_id" => 56,
         "movement_id" => 11,
     ],
     [
@@ -3068,7 +3068,7 @@ return [
         "technique" => "Piombo e rilievo",
         "width" => 970,
         "height" => 950,
-        "artist_id" => 58,
+        "artist_id" => 56,
         "movement_id" => 11,
     ],
     [
@@ -3079,7 +3079,7 @@ return [
         "technique" => "Acciaio",
         "width" => 980,
         "height" => 960,
-        "artist_id" => 59,
+        "artist_id" => 57,
         "movement_id" => 11,
     ],
     [
@@ -3090,7 +3090,7 @@ return [
         "technique" => "Materiale trasparente e luci",
         "width" => 990,
         "height" => 970,
-        "artist_id" => 59,
+        "artist_id" => 57,
         "movement_id" => 11,
     ],
     [
@@ -3101,7 +3101,7 @@ return [
         "technique" => "Acciaio e cemento",
         "width" => 1000,
         "height" => 980,
-        "artist_id" => 59,
+        "artist_id" => 57,
         "movement_id" => 11,
     ],
     [
@@ -3112,7 +3112,7 @@ return [
         "technique" => "Cemento e metallo",
         "width" => 1010,
         "height" => 990,
-        "artist_id" => 59,
+        "artist_id" => 57,
         "movement_id" => 11,
     ],
     [
@@ -3123,7 +3123,7 @@ return [
         "technique" => "Metallo e materiali vari",
         "width" => 1020,
         "height" => 1000,
-        "artist_id" => 59,
+        "artist_id" => 57,
         "movement_id" => 11,
     ],
     [
@@ -3134,7 +3134,7 @@ return [
         "technique" => "Acciaio",
         "width" => 1030,
         "height" => 1010,
-        "artist_id" => 60,
+        "artist_id" => 58,
         "movement_id" => 11,
     ],
     [
@@ -3145,7 +3145,7 @@ return [
         "technique" => "Installazione interattiva",
         "width" => 1040,
         "height" => 1020,
-        "artist_id" => 60,
+        "artist_id" => 58,
         "movement_id" => 11,
     ],
     [
@@ -3156,7 +3156,7 @@ return [
         "technique" => "Materiali vari e luce",
         "width" => 1050,
         "height" => 1030,
-        "artist_id" => 60,
+        "artist_id" => 58,
         "movement_id" => 11,
     ],
     [
@@ -3167,7 +3167,7 @@ return [
         "technique" => "Installazione cinetica",
         "width" => 1060,
         "height" => 1040,
-        "artist_id" => 60,
+        "artist_id" => 58,
         "movement_id" => 11,
     ],
     [
@@ -3178,7 +3178,7 @@ return [
         "technique" => "Metallo e plastica",
         "width" => 1070,
         "height" => 1050,
-        "artist_id" => 60,
+        "artist_id" => 58,
         "movement_id" => 11,
     ],
     [
@@ -3189,7 +3189,7 @@ return [
         "technique" => "Performance interattiva",
         "width" => 1080,
         "height" => 1060,
-        "artist_id" => 61,
+        "artist_id" => 59,
         "movement_id" => 12,
     ],
     [
@@ -3200,7 +3200,7 @@ return [
         "technique" => "Installazione interattiva",
         "width" => 1090,
         "height" => 1070,
-        "artist_id" => 61,
+        "artist_id" => 59,
         "movement_id" => 12,
     ],
     [
@@ -3211,7 +3211,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1100,
         "height" => 1080,
-        "artist_id" => 61,
+        "artist_id" => 59,
         "movement_id" => 12,
     ],
     [
@@ -3222,7 +3222,7 @@ return [
         "technique" => "Tecniche miste",
         "width" => 1110,
         "height" => 1090,
-        "artist_id" => 61,
+        "artist_id" => 59,
         "movement_id" => 12,
     ],
     [
@@ -3233,7 +3233,7 @@ return [
         "technique" => "Materiali vari",
         "width" => 1120,
         "height" => 1100,
-        "artist_id" => 61,
+        "artist_id" => 59,
         "movement_id" => 12,
     ],
     [
@@ -3244,7 +3244,7 @@ return [
         "technique" => "Testo su tela",
         "width" => 1130,
         "height" => 1110,
-        "artist_id" => 62,
+        "artist_id" => 60,
         "movement_id" => 12,
     ],
     [
@@ -3255,7 +3255,7 @@ return [
         "technique" => "Scrittura e installazione",
         "width" => 1140,
         "height" => 1120,
-        "artist_id" => 62,
+        "artist_id" => 60,
         "movement_id" => 12,
     ],
     [
@@ -3266,7 +3266,7 @@ return [
         "technique" => "Installazioni interattive",
         "width" => 1150,
         "height" => 1130,
-        "artist_id" => 62,
+        "artist_id" => 60,
         "movement_id" => 12,
     ],
     [
@@ -3277,7 +3277,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1160,
         "height" => 1140,
-        "artist_id" => 62,
+        "artist_id" => 60,
         "movement_id" => 12,
     ],
     [
@@ -3288,7 +3288,7 @@ return [
         "technique" => "Installazione urbana",
         "width" => 1170,
         "height" => 1150,
-        "artist_id" => 62,
+        "artist_id" => 60,
         "movement_id" => 12,
     ],
     [
@@ -3299,7 +3299,7 @@ return [
         "technique" => "Testo e installazione",
         "width" => 1180,
         "height" => 1160,
-        "artist_id" => 63,
+        "artist_id" => 61,
         "movement_id" => 12,
     ],
     [
@@ -3310,7 +3310,7 @@ return [
         "technique" => "Installazione e performance",
         "width" => 1190,
         "height" => 1170,
-        "artist_id" => 63,
+        "artist_id" => 61,
         "movement_id" => 12,
     ],
     [
@@ -3321,7 +3321,7 @@ return [
         "technique" => "Performance teatrale",
         "width" => 1200,
         "height" => 1180,
-        "artist_id" => 63,
+        "artist_id" => 61,
         "movement_id" => 12,
     ],
     [
@@ -3332,7 +3332,7 @@ return [
         "technique" => "Film e video",
         "width" => 1210,
         "height" => 1190,
-        "artist_id" => 63,
+        "artist_id" => 61,
         "movement_id" => 12,
     ],
     [
@@ -3343,7 +3343,7 @@ return [
         "technique" => "Installazioni pubbliche",
         "width" => 1220,
         "height" => 1200,
-        "artist_id" => 63,
+        "artist_id" => 61,
         "movement_id" => 12,
     ],
     [
@@ -3354,7 +3354,7 @@ return [
         "technique" => "Scultura in legno",
         "width" => 1230,
         "height" => 1210,
-        "artist_id" => 64,
+        "artist_id" => 62,
         "movement_id" => 13,
     ],
     [
@@ -3365,7 +3365,7 @@ return [
         "technique" => "Installazione interattiva",
         "width" => 1240,
         "height" => 1220,
-        "artist_id" => 64,
+        "artist_id" => 62,
         "movement_id" => 13,
     ],
     [
@@ -3376,7 +3376,7 @@ return [
         "technique" => "Installazione con materiali naturali",
         "width" => 1250,
         "height" => 1230,
-        "artist_id" => 64,
+        "artist_id" => 62,
         "movement_id" => 13,
     ],
     [
@@ -3387,7 +3387,7 @@ return [
         "technique" => "Impronta su materiale",
         "width" => 1260,
         "height" => 1240,
-        "artist_id" => 64,
+        "artist_id" => 62,
         "movement_id" => 13,
     ],
     [
@@ -3398,7 +3398,7 @@ return [
         "technique" => "Installazione cinetica",
         "width" => 1270,
         "height" => 1250,
-        "artist_id" => 64,
+        "artist_id" => 62,
         "movement_id" => 13,
     ],
     [
@@ -3409,7 +3409,7 @@ return [
         "technique" => "Installazione interattiva",
         "width" => 1280,
         "height" => 1260,
-        "artist_id" => 65,
+        "artist_id" => 63,
         "movement_id" => 13,
     ],
     [
@@ -3420,7 +3420,7 @@ return [
         "technique" => "Scultura e pittura",
         "width" => 1290,
         "height" => 1270,
-        "artist_id" => 65,
+        "artist_id" => 63,
         "movement_id" => 13,
     ],
     [
@@ -3431,7 +3431,7 @@ return [
         "technique" => "Scultura in pietra",
         "width" => 1300,
         "height" => 1280,
-        "artist_id" => 65,
+        "artist_id" => 63,
         "movement_id" => 13,
     ],
     [
@@ -3442,7 +3442,7 @@ return [
         "technique" => "Installazione tessile",
         "width" => 1310,
         "height" => 1290,
-        "artist_id" => 65,
+        "artist_id" => 63,
         "movement_id" => 13,
     ],
     [
@@ -3453,7 +3453,7 @@ return [
         "technique" => "Installazione cinetica",
         "width" => 1320,
         "height" => 1300,
-        "artist_id" => 65,
+        "artist_id" => 63,
         "movement_id" => 13,
     ],
     [
@@ -3464,7 +3464,7 @@ return [
         "technique" => "Installazione luminosa",
         "width" => 1330,
         "height" => 1310,
-        "artist_id" => 66,
+        "artist_id" => 64,
         "movement_id" => 13,
     ],
     [
@@ -3475,7 +3475,7 @@ return [
         "technique" => "Scultura e pittura",
         "width" => 1340,
         "height" => 1320,
-        "artist_id" => 66,
+        "artist_id" => 64,
         "movement_id" => 13,
     ],
     [
@@ -3486,7 +3486,7 @@ return [
         "technique" => "Incisione su legno",
         "width" => 1350,
         "height" => 1330,
-        "artist_id" => 66,
+        "artist_id" => 64,
         "movement_id" => 13,
     ],
     [
@@ -3497,7 +3497,7 @@ return [
         "technique" => "Tecniche miste",
         "width" => 1360,
         "height" => 1340,
-        "artist_id" => 66,
+        "artist_id" => 64,
         "movement_id" => 13,
     ],
     [
@@ -3508,7 +3508,7 @@ return [
         "technique" => "Scultura e pittura",
         "width" => 1370,
         "height" => 1350,
-        "artist_id" => 66,
+        "artist_id" => 64,
         "movement_id" => 13,
     ],
     [
@@ -3519,7 +3519,7 @@ return [
         "technique" => "Autoritratto fotografico",
         "width" => 1380,
         "height" => 1360,
-        "artist_id" => 67,
+        "artist_id" => 65,
         "movement_id" => 15,
     ],
     [
@@ -3530,7 +3530,7 @@ return [
         "technique" => "Scultura e installazione",
         "width" => 1390,
         "height" => 1370,
-        "artist_id" => 67,
+        "artist_id" => 65,
         "movement_id" => 15,
     ],
     [
@@ -3541,7 +3541,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1400,
         "height" => 1380,
-        "artist_id" => 67,
+        "artist_id" => 65,
         "movement_id" => 15,
     ],
     [
@@ -3552,7 +3552,7 @@ return [
         "technique" => "Pittura e scultura",
         "width" => 1410,
         "height" => 1390,
-        "artist_id" => 67,
+        "artist_id" => 65,
         "movement_id" => 15,
     ],
     [
@@ -3563,7 +3563,7 @@ return [
         "technique" => "Pittura e installazione",
         "width" => 1420,
         "height" => 1400,
-        "artist_id" => 67,
+        "artist_id" => 65,
         "movement_id" => 15,
     ],
     [
@@ -3574,7 +3574,7 @@ return [
         "technique" => "Scultura in bronzo",
         "width" => 1430,
         "height" => 1410,
-        "artist_id" => 68,
+        "artist_id" => 66,
         "movement_id" => 14,
     ],
     [
@@ -3585,7 +3585,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1440,
         "height" => 1420,
-        "artist_id" => 68,
+        "artist_id" => 66,
         "movement_id" => 14,
     ],
     [
@@ -3596,7 +3596,7 @@ return [
         "technique" => "Pittura su vetro",
         "width" => 1450,
         "height" => 1430,
-        "artist_id" => 68,
+        "artist_id" => 66,
         "movement_id" => 14,
     ],
     [
@@ -3607,7 +3607,7 @@ return [
         "technique" => "Scultura in marmo",
         "width" => 1460,
         "height" => 1440,
-        "artist_id" => 68,
+        "artist_id" => 66,
         "movement_id" => 14,
     ],
     [
@@ -3618,7 +3618,7 @@ return [
         "technique" => "Scultura in resina",
         "width" => 1470,
         "height" => 1450,
-        "artist_id" => 68,
+        "artist_id" => 66,
         "movement_id" => 14,
     ],
     [
@@ -3629,7 +3629,7 @@ return [
         "technique" => "Scultura e installazione",
         "width" => 1480,
         "height" => 1460,
-        "artist_id" => 69,
+        "artist_id" => 67,
         "movement_id" => 14,
     ],
     [
@@ -3640,7 +3640,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1490,
         "height" => 1470,
-        "artist_id" => 69,
+        "artist_id" => 67,
         "movement_id" => 14,
     ],
     [
@@ -3651,7 +3651,7 @@ return [
         "technique" => "Pittura e scultura",
         "width" => 1500,
         "height" => 1480,
-        "artist_id" => 69,
+        "artist_id" => 67,
         "movement_id" => 14,
     ],
     [
@@ -3662,7 +3662,7 @@ return [
         "technique" => "Scultura e pittura",
         "width" => 1510,
         "height" => 1490,
-        "artist_id" => 69,
+        "artist_id" => 67,
         "movement_id" => 14,
     ],
     [
@@ -3673,7 +3673,7 @@ return [
         "technique" => "Pittura astratta",
         "width" => 1520,
         "height" => 1500,
-        "artist_id" => 69,
+        "artist_id" => 67,
         "movement_id" => 14,
     ],
     [
@@ -3684,7 +3684,7 @@ return [
         "technique" => "Scultura in acciaio",
         "width" => 1530,
         "height" => 1510,
-        "artist_id" => 70,
+        "artist_id" => 68,
         "movement_id" => 15,
     ],
     [
@@ -3695,7 +3695,7 @@ return [
         "technique" => "Scultura in marmo",
         "width" => 1540,
         "height" => 1520,
-        "artist_id" => 70,
+        "artist_id" => 68,
         "movement_id" => 15,
     ],
     [
@@ -3706,7 +3706,7 @@ return [
         "technique" => "Installazione con luce",
         "width" => 1550,
         "height" => 1530,
-        "artist_id" => 70,
+        "artist_id" => 68,
         "movement_id" => 15,
     ],
     [
@@ -3717,7 +3717,7 @@ return [
         "technique" => "Pittura e scultura",
         "width" => 1560,
         "height" => 1540,
-        "artist_id" => 70,
+        "artist_id" => 68,
         "movement_id" => 15,
     ],
     [
@@ -3728,7 +3728,7 @@ return [
         "technique" => "Installazione cinetica",
         "width" => 1570,
         "height" => 1550,
-        "artist_id" => 70,
+        "artist_id" => 68,
         "movement_id" => 15,
     ],
     [
@@ -3739,7 +3739,7 @@ return [
         "technique" => "Pittura digitale",
         "width" => 1580,
         "height" => 1560,
-        "artist_id" => 71,
+        "artist_id" => 69,
         "movement_id" => 15,
     ],
     [
@@ -3750,7 +3750,7 @@ return [
         "technique" => "Pittura su tela",
         "width" => 1590,
         "height" => 1570,
-        "artist_id" => 71,
+        "artist_id" => 69,
         "movement_id" => 15,
     ],
     [
@@ -3761,7 +3761,7 @@ return [
         "technique" => "Pittura e installazione",
         "width" => 1600,
         "height" => 1580,
-        "artist_id" => 71,
+        "artist_id" => 69,
         "movement_id" => 15,
     ],
     [
@@ -3772,7 +3772,7 @@ return [
         "technique" => "Installazione",
         "width" => 1610,
         "height" => 1590,
-        "artist_id" => 71,
+        "artist_id" => 69,
         "movement_id" => 15,
     ],
     [
@@ -3783,7 +3783,7 @@ return [
         "technique" => "Scultura e installazione",
         "width" => 1620,
         "height" => 1600,
-        "artist_id" => 71,
+        "artist_id" => 69,
         "movement_id" => 15,
     ],
     [
@@ -3794,7 +3794,7 @@ return [
         "technique" => "Pittura e scultura",
         "width" => 1630,
         "height" => 1610,
-        "artist_id" => 72,
+        "artist_id" => 70,
         "movement_id" => 14,
     ],
     [
@@ -3805,7 +3805,7 @@ return [
         "technique" => "Scultura e installazione",
         "width" => 1640,
         "height" => 1620,
-        "artist_id" => 72,
+        "artist_id" => 70,
         "movement_id" => 14,
     ],
     [
@@ -3816,7 +3816,7 @@ return [
         "technique" => "Pittura e collage",
         "width" => 1650,
         "height" => 1630,
-        "artist_id" => 72,
+        "artist_id" => 70,
         "movement_id" => 14,
     ],
     [
@@ -3827,7 +3827,7 @@ return [
         "technique" => "Scultura e pittura",
         "width" => 1660,
         "height" => 1640,
-        "artist_id" => 72,
+        "artist_id" => 70,
         "movement_id" => 14,
     ],
     [
@@ -3838,7 +3838,7 @@ return [
         "technique" => "Scultura cinetica",
         "width" => 1670,
         "height" => 1650,
-        "artist_id" => 72,
+        "artist_id" => 70,
         "movement_id" => 14,
     ]
 ];

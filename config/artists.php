@@ -356,18 +356,6 @@ return [
         "nationality" => "Italiana"
     ],
     [
-        "name" => "Mimmo Paladino",
-        "birth_date" => "1948-12-18",
-        "biography" => "Mimmo Paladino è un artista poliedrico, attivo nella pittura, scultura e incisione. Le sue opere si caratterizzano per simboli arcaici, figure totemiche e una forte componente materica. È stato tra i promotori del ritorno alla pittura negli anni '80, con una poetica che coniuga il passato e il presente in modo evocativo. Il suo linguaggio visivo è enigmatico e fortemente evocativo.",
-        "nationality" => "Italiana"
-    ],
-    [
-        "name" => "Enzo Cucchi",
-        "birth_date" => "1949-11-14",
-        "biography" => "Enzo Cucchi è noto per il suo immaginario visionario e spirituale. Le sue grandi tele e installazioni sono ricche di simboli, scritte e elementi fantastici. La sua arte si distingue per un uso intenso del colore e un approccio quasi mistico alla materia. Fa parte del gruppo dei cinque fondatori della Transavanguardia teorizzata da Achille Bonito Oliva. La sua opera è fortemente narrativa, poetica e personale.",
-        "nationality" => "Italiana"
-    ],
-    [
         "name" => "Richard Anuszkiewicz",
         "birth_date" => "1930-05-23",
         "death_date" => "2020-05-19",
