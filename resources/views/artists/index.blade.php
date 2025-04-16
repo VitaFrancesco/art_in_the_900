@@ -1,7 +1,7 @@
 @extends('layouts.index')
 @php use Illuminate\Support\Str; @endphp
 
-@section('title', 'Opere')
+@section('title', 'Artisti')
 
 @section('content')
     <div class="row py-4">

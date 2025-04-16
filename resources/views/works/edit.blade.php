@@ -7,12 +7,12 @@
         @method('PUT')
         <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
             <div class="editImage position-relative">
-                <div class="hidden_input_image">
+                <div id="imageCircle" class="hidden_input_image">
                     <label for="image" class="form-label"><i class="fa-solid fa-pen"></i></label>
                     <input type="file" class="d-none" id="image" name="image">
                 </div>
                 @if ($work->image)
-                    <img class="max-20" src="{{ asset('storage/' . $work->image) }}" alt="#">
+                    <img id="previewImage" class="max-20" src="{{ asset('storage/' . $work->image) }}" alt="#">
                 @endif
             </div>
             <div class="editForm">
@@ -77,4 +77,25 @@
             <button type="submit" class="btn btn-primary px-4">Aggiorna</button>
         </div>
     </form>
+    <script>
+        const input = document.getElementById('image');
+        const preview = document.getElementById('previewImage');
+        const imageCircle = document.getElementById('imageCircle');
+
+        input.addEventListener('change', function() {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                };
+
+                imageCircle.classList.remove('create');
+
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 @endsection

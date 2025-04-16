@@ -8,6 +8,8 @@ use App\Models\Work;
 use App\Models\Artist;
 use App\Models\Movement;
 
+use Illuminate\Support\Facades\Storage;
+
 class MovementController extends Controller
 {
     /**
@@ -44,7 +46,10 @@ class MovementController extends Controller
      */
     public function create()
     {
-        //
+        $artists = Artist::all();
+        $works = Work::all();
+        $indexRoute = route('movements.index');
+        return view('movements.create', compact('indexRoute', 'artists', 'works'));
     }
 
     /**
@@ -52,7 +57,27 @@ class MovementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $movement = new Movement();
+
+        $movement->name = $data['name'];
+        $movement->start_year = $data['start_year'];
+        $movement->end_year = $data['end_year'];
+        $movement->description = $data['description'];
+
+        if(array_key_exists('image', $data)) {
+            $image_url = Storage::putFile('movements', $data['image']);
+            $movement->image = $image_url;
+        }
+
+        $movement->save();
+
+        if ($movement->has('artists')) {
+            $movement->artists()->attach($data['artists']);
+        }
+
+        return redirect()->route('movements.show', $movement);
     }
 
     /**
@@ -72,8 +97,10 @@ class MovementController extends Controller
      */
     public function edit(Movement $movement)
     {
+        $artists = Artist::all();
+        $works = Work::all();
         $showRoute = route('movements.show', $movement);
-        return view('movements.edit', compact('movement', 'showRoute'));
+        return view('movements.edit', compact('movement', 'showRoute', 'works', 'artists'));
         
     }
 
@@ -82,7 +109,33 @@ class MovementController extends Controller
      */
     public function update(Request $request, Movement $movement)
     {
-        //
+        $data = $request->all();
+
+        $movement->name = $data['name'];
+        $movement->start_year = $data['start_year'];
+        $movement->end_year = $data['end_year'];
+        $movement->description = $data['description'];
+
+        if(array_key_exists('image', $data)) {
+            
+            if($movement->image) {
+                Storage::delete($movement->image);
+            }
+            
+            $image_url = Storage::putFile('works', $data['image']);
+            
+            $movement->image = $image_url;
+        }
+
+        $movement->update();
+
+        if ($request->has('artists')) {
+            $movement->artists()->sync($data['artists']);
+        } else {
+            $movement->artists()->detach();
+        }
+
+        return redirect()->route('movements.show', $movement);
     }
 
     /**
