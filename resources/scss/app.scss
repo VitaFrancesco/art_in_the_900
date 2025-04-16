@@ -7,6 +7,7 @@
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     display: block;
 }
@@ -125,7 +126,8 @@ a {
 }
 
 .imageShow,
-.mainInfo {
+.mainInfo,
+.editForm {
     width: 100%;
 }
 
@@ -139,6 +141,8 @@ a {
             rgba(0, 0, 0, 0));
 
     img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
     }
@@ -185,6 +189,57 @@ a {
     animation-delay: calc(9s / 4 * (4 - 4) * -1);
 }
 
+.editImage {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 2px gray;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.hidden_input_image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    label {
+        font-size: 34px;
+        color: white;
+    }
+}
+
+.editImage:hover .hidden_input_image {
+    display: flex;
+}
+
+.hidden_input_image.create {
+    display: flex;
+}
+
 @keyframes scrollLeft {
     to {
         left: -250px;
@@ -196,6 +251,14 @@ a {
     .imageShow,
     .mainInfo {
         width: 48%;
+    }
+
+    .editImage {
+        width: 39%;
+    }
+
+    .editForm {
+        width: 58%;
     }
 
 }

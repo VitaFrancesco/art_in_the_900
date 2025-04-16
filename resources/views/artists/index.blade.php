@@ -22,7 +22,7 @@
                                         @endif
                                     @endforeach
                                 </h6>
-                                <p class="card-text">{{ Str::limit($artist->biography, 250, '...') }}</p>
+                                <p class="card-text">{!! nl2br(e(Str::limit($artist->biography, 250, '...'))) !!}</p>
                             </div>
                             <div class="d-flex justify-content-end align-items-baseline gap-2">
                                 <span class="more">Mostra</span>

@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="mb-4">
-        <p>{{ $artist->biography }}</p>
+        <p>{!! nl2br(e($artist->biography)) !!}</p>
     </div>
     <div class="py-3">
         @if ($artist->works->count() >= 4)

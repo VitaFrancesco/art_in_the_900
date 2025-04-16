@@ -70,15 +70,17 @@ class MovementController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Movement $movement)
     {
-        //
+        $showRoute = route('movements.show', $movement);
+        return view('movements.edit', compact('movement', 'showRoute'));
+        
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Movement $movement)
     {
         //
     }
@@ -86,8 +88,12 @@ class MovementController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Movement $movement)
     {
-        //
+        if ($movement->image) {
+            Storage::delete($movement->image);
+        }
+        $movement->delete();
+        return redirect()->route('movements.index');
     }
 }

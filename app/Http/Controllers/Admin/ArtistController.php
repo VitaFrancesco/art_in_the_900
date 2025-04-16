@@ -70,15 +70,16 @@ class ArtistController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Artist $artist)
     {
-        //
+        $showRoute = route('artists.show', $artist);
+        return view('artists.edit', compact('artist', 'showRoute'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Artist $artist)
     {
         //
     }
@@ -86,8 +87,12 @@ class ArtistController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Artist $artist)
     {
-        //
+        if ($artist->image) {
+            Storage::delete($artist->image);
+        }
+        $artist->delete();
+        return redirect()->route('artists.index');
     }
 }

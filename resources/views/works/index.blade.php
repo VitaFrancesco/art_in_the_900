@@ -15,7 +15,9 @@
                             <div class="flex-grow-1 position-relative z-1 mb-2">
                                 <h5 class="card-title">{{ $work->title }}</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">{{ $work->artist->name }}</h6>
-                                <p class="card-text">{{ Str::limit($work->description, 250, '...') }}</p>
+                                <p class="card-text">
+                                    {!! nl2br(e(Str::limit($work->description, 250, '...'))) !!}
+                                </p>
                             </div>
                             <div class="d-flex justify-content-end align-items-baseline gap-2">
                                 <span class="more">Mostra</span>

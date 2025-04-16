@@ -17,6 +17,6 @@
         </div>
     </div>
     <div>
-        <p>{{ $work->description }}</p>
+        <p>{!! nl2br(e($work->description)) !!}</p>
     </div>
 @endsection

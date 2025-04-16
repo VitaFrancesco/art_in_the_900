@@ -8,6 +8,8 @@ use App\Models\Work;
 use App\Models\Artist;
 use App\Models\Movement;
 
+use Illuminate\Support\Facades\Storage;
+
 class WorkController extends Controller
 {
     /**
@@ -44,7 +46,10 @@ class WorkController extends Controller
      */
     public function create()
     {
-        //
+        $artists = Artist::all();
+        $movements = Movement::all();
+        $indexRoute = route('works.index');
+        return view('works.create', compact('indexRoute', 'artists', 'movements'));
     }
 
     /**
@@ -52,7 +57,28 @@ class WorkController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $work = new Work();
+
+        $work->title = $data['title'];
+        $work->museum = $data['museum'];
+        $work->creation_year = $data['creation_year'];
+        $work->technique = $data['technique'];
+        $work->width = $data['width'];
+        $work->height = $data['height'];
+        $work->artist_id = $data['artist_id'];
+        $work->movement_id = $data['movement_id'];
+        $work->description = $data['description'];
+
+        if(array_key_exists('image', $data)) {
+            $image_url = Storage::putFile('works', $data['image']);
+            $work->image = $image_url;
+        }
+
+        $work->save();
+
+        return redirect()->route('works.show', $work);
     }
 
     /**
@@ -70,24 +96,56 @@ class WorkController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Work $work)
     {
-        //
+        $artists = Artist::all();
+        $movements = Movement::all();
+        $showRoute = route('works.show', $work);
+        return view('works.edit', compact('work', 'showRoute', 'artists', 'movements'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Work $work)
     {
-        //
+        $data = $request->all();
+
+        $work->title = $data['title'];
+        $work->museum = $data['museum'];
+        $work->creation_year = $data['creation_year'];
+        $work->technique = $data['technique'];
+        $work->width = $data['width'];
+        $work->height = $data['height'];
+        $work->artist_id = $data['artist_id'];
+        $work->movement_id = $data['movement_id'];
+        $work->description = $data['description'];
+
+        if(array_key_exists('image', $data)) {
+            
+            if($work->image) {
+                Storage::delete($work->image);
+            }
+            
+            $image_url = Storage::putFile('works', $data['image']);
+            
+            $work->image = $image_url;
+        }
+
+        $work->update();
+
+        return redirect()->route('works.show', $work);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Work $work)
     {
-        //
+        if ($work->image) {
+            Storage::delete($work->image);
+        }
+        $work->delete();
+        return redirect()->route('works.index');
     }
 }
