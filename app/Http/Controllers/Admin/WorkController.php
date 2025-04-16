@@ -58,9 +58,13 @@ class WorkController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Work $work)
     {
-        //
+        $indexRoute = route('works.index');
+        $deleteRoute = route('works.destroy', $work);
+        $editRoute = route('works.edit', $work);
+        $whatEliminate = $work->title;
+        return view('works.show', compact('work', 'deleteRoute', 'editRoute', 'whatEliminate', 'indexRoute'));
     }
 
     /**

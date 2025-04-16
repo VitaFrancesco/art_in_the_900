@@ -58,9 +58,13 @@ class MovementController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Movement $movement)
     {
-        //
+        $indexRoute = route('movements.index');
+        $deleteRoute = route('movements.destroy', $movement);
+        $editRoute = route('movements.edit', $movement);
+        $whatEliminate = $movement->name;
+        return view('movements.show', compact('movement', 'deleteRoute', 'editRoute', 'whatEliminate', 'indexRoute'));
     }
 
     /**

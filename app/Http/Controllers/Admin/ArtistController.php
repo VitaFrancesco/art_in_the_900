@@ -58,9 +58,13 @@ class ArtistController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Artist $artist)
     {
-        //
+        $indexRoute = route('artists.index');
+        $deleteRoute = route('artists.destroy', $artist);
+        $editRoute = route('artists.edit', $artist);
+        $whatEliminate = $artist->name;
+        return view('artists.show', compact('artist', 'deleteRoute', 'editRoute', 'whatEliminate', 'indexRoute'));
     }
 
     /**
