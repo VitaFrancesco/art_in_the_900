@@ -8,6 +8,8 @@ use App\Models\Work;
 use App\Models\Artist;
 use App\Models\Movement;
 
+use Illuminate\Support\Facades\Storage;
+
 class ArtistController extends Controller
 {
     /**
@@ -44,7 +46,9 @@ class ArtistController extends Controller
      */
     public function create()
     {
-        //
+        $movements = Movement::all();
+        $indexRoute = route('artists.index');
+        return view('artists.create', compact('indexRoute', 'movements'));
     }
 
     /**
@@ -52,7 +56,28 @@ class ArtistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $artist = new Artist();
+
+        $artist->name = $data['name'];
+        $artist->birth_date = $data['birth_date'];
+        $artist->death_date = $data['death_date'];
+        $artist->nationality = $data['nationality'];
+        $artist->biography = $data['biography'];
+
+        if(array_key_exists('image', $data)) {            
+            $image_url = Storage::putFile('artists', $data['image']);
+            $artist->image = $image_url;
+        }
+
+        $artist->save();
+
+        if ($request->has('movements')) {
+            $artist->movements()->attach($data['movements']);
+        }
+
+        return redirect()->route('artists.show', $artist);
     }
 
     /**
@@ -72,8 +97,9 @@ class ArtistController extends Controller
      */
     public function edit(Artist $artist)
     {
+        $movements = Movement::all();
         $showRoute = route('artists.show', $artist);
-        return view('artists.edit', compact('artist', 'showRoute'));
+        return view('artists.edit', compact('artist', 'showRoute', 'movements'));
     }
 
     /**
@@ -81,7 +107,34 @@ class ArtistController extends Controller
      */
     public function update(Request $request, Artist $artist)
     {
-        //
+        $data = $request->all();
+
+        $artist->name = $data['name'];
+        $artist->birth_date = $data['birth_date'];
+        $artist->death_date = $data['death_date'];
+        $artist->nationality = $data['nationality'];
+        $artist->biography = $data['biography'];
+
+        if(array_key_exists('image', $data)) {
+            
+            if($artist->image) {
+                Storage::delete($artist->image);
+            }
+            
+            $image_url = Storage::putFile('artists', $data['image']);
+            
+            $artist->image = $image_url;
+        }
+
+        $artist->update();
+
+        if ($request->has('movements')) {
+            $artist->movements()->sync($data['movements']);
+        } else {
+            $artist->movements()->detach();
+        }
+
+        return redirect()->route('artists.show', $artist);
     }
 
     /**

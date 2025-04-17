@@ -47,9 +47,8 @@ class MovementController extends Controller
     public function create()
     {
         $artists = Artist::all();
-        $works = Work::all();
         $indexRoute = route('movements.index');
-        return view('movements.create', compact('indexRoute', 'artists', 'works'));
+        return view('movements.create', compact('indexRoute', 'artists'));
     }
 
     /**
@@ -98,9 +97,8 @@ class MovementController extends Controller
     public function edit(Movement $movement)
     {
         $artists = Artist::all();
-        $works = Work::all();
         $showRoute = route('movements.show', $movement);
-        return view('movements.edit', compact('movement', 'showRoute', 'works', 'artists'));
+        return view('movements.edit', compact('movement', 'showRoute', 'artists'));
         
     }
 

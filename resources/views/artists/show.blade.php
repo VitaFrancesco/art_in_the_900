@@ -7,13 +7,13 @@
         </div>
         <div class="mainInfo">
             <h1>{{ $artist->name }}</h1>
-            @if (!empty($artist->birth_year))
-                <p class="mb-1">Nato il&#58; {{ $artist->birth_year }}</p>
+            @if ($artist->birth_date)
+                <p class="mb-1">Nato il&#58; {{ $artist->birth_date }}</p>
             @endif
-            @if (!empty($artist->death_year))
-                <p class="mb-1">Morto il&#58; {{ $artist->death_year }}</p>
+            @if ($artist->death_date)
+                <p class="mb-1">Morto il&#58; {{ $artist->death_date }}</p>
             @endif
-            <p class="mb-1">{{ $artist->nationality }}</p>
+            <p class="mb-1">Nazionalità&#58; {{ $artist->nationality }}</p>
         </div>
     </div>
     <div class="mb-4">
