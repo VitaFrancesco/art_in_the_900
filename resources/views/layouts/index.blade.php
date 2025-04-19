@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    @include('components.navbar')
+    @include('partials.navbar')
     <main class="container pt-5">
         <h1 class="text-center mb-5">@yield('title')</h1>
         <div class="d-flex align-items-center justify-content-between">

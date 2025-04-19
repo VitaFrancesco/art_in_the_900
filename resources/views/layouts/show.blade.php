@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    @include('components.navbar')
+    @include('partials.navbar')
     <main class="container pt-5">
         <div class="d-flex align-items-center justify-content-between">
             <a class="btn btn-outline-primary" href="{{ $indexRoute }}">

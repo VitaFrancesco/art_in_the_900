@@ -73,7 +73,7 @@
             <textarea class="form-control" id="description" name="description" rows="7">{{ $work->description }}</textarea>
         </div>
         <div class="d-flex align-items-center justify-content-center gap-5">
-            <button type="reset" class="btn btn-secondary px-4">Annulla</button>
+            <button type="reset" class="btn btn-secondary px-4">Annulla modifiche</button>
             <button type="submit" class="btn btn-primary px-4">Aggiorna</button>
         </div>
     </form>

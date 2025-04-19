@@ -25,7 +25,7 @@ class WorkTableSeeder extends Seeder
             $newWork->height = $work['height'];
             $newWork->artist_id = $work['artist_id'];
             $newWork->movement_id = $work['movement_id'];
-            $newWork->image = 'works/' . str_replace([':', ','], '', str_replace(' ', '_', strtolower($work['title']))) . '.png';
+            $newWork->image = 'works/' . str_replace([':', ',', '?'], '', str_replace(' ', '_', strtolower($work['title']))) . '.png';
             $newWork->save();
         }
     }

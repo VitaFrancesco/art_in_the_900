@@ -43,7 +43,7 @@
             @endforeach
         </div>
         <div class="d-flex align-items-center justify-content-center gap-5">
-            <button type="reset" class="btn btn-secondary px-4">Annulla</button>
+            <button type="reset" class="btn btn-secondary px-4">Annulla modifiche</button>
             <button type="submit" class="btn btn-primary px-4">Crea</button>
         </div>
     </form>

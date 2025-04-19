@@ -15,4 +15,8 @@ class Work extends Model
     public function movement () {
         return $this->belongsTo(Movement::class);
     }
+
+    public function getImageUrlAttribute() {
+        return $this->image ? asset('storage/' . $this->image) : null;
+    }
 }

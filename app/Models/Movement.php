@@ -15,4 +15,8 @@ class Movement extends Model
     public function artists() {
         return $this->belongsToMany(Artist::class);
     }
+
+    public function getImageUrlAttribute() {
+        return $this->image ? asset('storage/' . $this->image) : null;
+    }
 }

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    @include('components.navbar')
+    @include('partials.navbar')
     <main class="container pt-5">
         <a class="btn btn-outline-primary" href="{{ $indexRoute }}">
             <i class="fa-solid fa-arrow-left"></i> <span>torna indietro</span>

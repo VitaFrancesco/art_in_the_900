@@ -23,6 +23,7 @@ class ArtistTableSeeder extends Seeder
             }
             $newArtist->biography = $artist['biography'];
             $newArtist->nationality = $artist['nationality'];
+            $newArtist->image = 'artists/' . str_replace([':', ',','?'], '', str_replace(' ', '_', strtolower($artist['name']))) . '.png';
             $newArtist->save();
         }
     }
