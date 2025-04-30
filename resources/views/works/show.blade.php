@@ -18,7 +18,7 @@
                 <p class="mb-1">Museo&#x3a; {{ $work->museum }}</p>
             @endif
             @if ($work->creation_year)
-                <p class="mb-1">Anno di creazion&#x3a; {{ $work->creation_year }}</p>
+                <p class="mb-1">Anno di creazione&#x3a; {{ $work->creation_year }}</p>
             @endif
             @if ($work->tecnique)
                 <p class="mb-1">Tecnica&#x3a; {{ $work->tecnique }}</p>

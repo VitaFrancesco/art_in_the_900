@@ -17,6 +17,7 @@ class WorkTableSeeder extends Seeder
         foreach ($worksArray as $work) {
             $newWork = new Work();
             $newWork->title = $work['title'];
+            $newWork->slug = str_replace(' ', '-', strtolower($work['title']));
             $newWork->museum = $work['museum'];
             $newWork->description = $work['description'];
             $newWork->creation_year = $work['creation_year'];
@@ -25,7 +26,7 @@ class WorkTableSeeder extends Seeder
             $newWork->height = $work['height'];
             $newWork->artist_id = $work['artist_id'];
             $newWork->movement_id = $work['movement_id'];
-            $newWork->image = 'works/' . str_replace([':', ',', '?'], '', str_replace(' ', '_', strtolower($work['title']))) . '.png';
+            $newWork->image = 'works/' . str_replace([':', ',', '?','#', '/'], '', str_replace(' ', '_', strtolower($work['title']))) . '.png';
             $newWork->save();
         }
     }

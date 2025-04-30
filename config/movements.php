@@ -68,41 +68,41 @@ return [
         "description" => "L'Op Art (Optical Art) è un movimento degli anni '60 che esplora la percezione visiva attraverso illusioni ottiche e strutture geometriche. Gli artisti dell'Op Art, come Victor Vasarely e Bridget Riley, creano opere che sembrano muoversi, vibrare o pulsare, sfruttando il contrasto tra bianco e nero o tra colori complementari. L'effetto finale coinvolge direttamente lo spettatore, generando una risposta percettiva intensa. Il movimento è spesso associato a una certa freddezza razionale, ma ha avuto una forte influenza sul design, sulla moda e sull'arte cinetica.",
         "start_year" => 1960,
         "end_year" => 1970,
-        "artists" => [37,38,39,53,54,55]
+        "artists" => [37,38,39,53]
     ],
     [
         "name" => "Minimalismo",
         "description" => "Il Minimalismo nasce negli Stati Uniti negli anni '60 come reazione all'espressionismo astratto. Mira a ridurre l'arte ai suoi elementi essenziali: forme geometriche semplici, colori neutri o monocromi, ripetizioni e serialità. Gli artisti minimalisti, come Donald Judd, Frank Stella e Agnes Martin, eliminano ogni traccia di emozione o soggettività, lasciando che l'opera si presenti come oggetto puro, spesso inserito in uno spazio specifico. Il movimento ha influenzato profondamente la scultura, la pittura, l'architettura e il design.",
         "start_year" => 1960,
         "end_year" => 1980,
-        "artists" => [40,41,42,56,57,58]
+        "artists" => [40,41,42,54,55,56]
     ],
     [
         "name" => "Arte concettuale",
         "description" => "L'Arte concettuale emerge negli anni '60 e '70 come corrente che privilegia l'idea sull'oggetto. L'opera può essere una frase, una fotografia, un'istruzione o un'azione documentata: ciò che conta è il concetto che l'artista vuole trasmettere. Figure chiave come Joseph Kosuth e Sol LeWitt mettono in discussione il ruolo dell'artista e del museo, spingendo il pubblico a riflettere criticamente sulla natura dell'arte. Il movimento ha avuto un'influenza duratura e ha ridefinito i confini dell'attività artistica.",
         "start_year" => 1965,
         "end_year" => 1980,
-        "artists" => [43,44,45,59,60,61]
+        "artists" => [43,44,45,57,58]
     ],
     [
         "name" => "Arte povera",
         "description" => "L'Arte povera è un movimento italiano nato alla fine degli anni '60, teorizzato dal critico Germano Celant. Gli artisti utilizzano materiali 'poveri' o naturali – come terra, legno, piombo, stracci – per creare installazioni e opere che sfuggono alle logiche commerciali e celebrano un ritorno all'essenzialità. L'Arte povera mette in discussione la tecnologia e il progresso, interrogandosi sul rapporto tra natura, cultura e società. Tra i principali esponenti vi sono Michelangelo Pistoletto, Jannis Kounellis e Mario Merz.",
         "start_year" => 1967,
         "end_year" => 1977,
-        "artists" => [46,47,48,62,63,64]
+        "artists" => [46,47,48,59,60,61]
     ],
     [
         "name" => "Neo-espressionismo",
         "description" => "Il Neo-espressionismo si afferma negli anni '80 come reazione al concettualismo e al minimalismo. Gli artisti recuperano la pittura figurativa e gestuale, con temi mitici, autobiografici o sociali. Le opere sono spesso cariche di pathos, realizzate con tecniche energiche e colori forti. In Germania è rappresentato dalla corrente dei 'Nuovi Selvaggi', in Italia da artisti come Sandro Chia e Mimmo Paladino, e negli Stati Uniti da Jean-Michel Basquiat. Il movimento riporta l'emozione e la narrazione al centro della pratica pittorica.",
         "start_year" => 1980,
         "end_year" => 1990,
-        "artists" => [49,50,66,67,70]
+        "artists" => [49,50,62,65]
     ],
     [
         "name" => "Transavanguardia",
         "description" => "La Transavanguardia è un movimento italiano postmoderno, teorizzato da Achille Bonito Oliva nel 1979, che promuove il ritorno alla pittura, al colore e all'individualismo creativo. In contrasto con l'arte concettuale e le rigidità delle avanguardie, gli artisti transavanguardisti recuperano iconografie storiche, mitiche o esotiche in maniera libera e soggettiva. Tra i principali esponenti figurano Sandro Chia, Francesco Clemente ed Enzo Cucchi. Il movimento anticipa molte delle caratteristiche dell'arte postmoderna degli anni '80 e '90.",
         "start_year" => 1979,
         "end_year" => 1989,
-        "artists" => [51,52,65,68,69]
+        "artists" => [51,52,63,64]
     ]
 ];

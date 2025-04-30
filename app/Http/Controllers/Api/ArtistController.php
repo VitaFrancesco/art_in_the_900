@@ -26,9 +26,9 @@ class ArtistController extends Controller
                               $workQuery->where('title', 'like', "%{$search}%");
                           });
                 })
-                ->paginate(10);
+                ->paginate(12);
         } else {
-            $artists = Artist::with(['movements', 'works'])->paginate(10);
+            $artists = Artist::with(['movements', 'works'])->paginate(12);
         }
 
         $artists->getCollection()->transform(function ($artist) {
@@ -42,7 +42,12 @@ class ArtistController extends Controller
         ]);
     }
 
-    public function show (Artist $artist) {
+    public function show ($artist) {
+        if (is_numeric($artist)) {
+            $artist = Artist::find($artist);
+        } else {
+            $artist = Artist::where('slug', $artist)->firstOrFail();
+        }
         $artist->load(['movements', 'works']);
         $artist->image_url = $artist->image_url;
 

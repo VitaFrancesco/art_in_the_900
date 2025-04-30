@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('movements', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
             $table->string('name');
             $table->longText('description')->nullable();
             $table->year('start_year')->nullable();

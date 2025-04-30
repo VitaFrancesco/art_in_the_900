@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
             $table->string('name');
             $table->date('birth_date')->nullable();
             $table->date('death_date')->nullable();

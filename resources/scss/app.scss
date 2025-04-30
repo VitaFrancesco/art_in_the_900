@@ -181,6 +181,7 @@ a {
 }
 
 .carousel_left {
+    top: 0;
     width: 250px;
     height: 200px;
     border-radius: 8px;
@@ -193,6 +194,7 @@ a {
 }
 
 .carousel_right {
+    top: 0;
     width: 250px;
     height: 200px;
     border-radius: 8px;
@@ -270,6 +272,17 @@ a {
 
 .hidden_input_image.create {
     display: flex;
+}
+
+.card-image-top {
+    height: 300px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
 }
 
 @keyframes scrollLeft {

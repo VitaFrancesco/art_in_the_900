@@ -32,10 +32,10 @@ class ArtistController extends Controller
                         $workQuery->where('title', 'like', "%{$search}%");
                     });
         })
-        ->paginate(10)
+        ->paginate(12)
         ->appends(['search' => $search]);
         } else {
-            $artists = Artist::with(['movements', 'works'])->paginate(10);
+            $artists = Artist::with(['movements', 'works'])->paginate(12);
         }
         $entity = $artists;
         return view('artists.index', compact('artists', 'indexRoute', 'createRoute', 'search', 'entity'));
@@ -61,6 +61,7 @@ class ArtistController extends Controller
         $artist = new Artist();
 
         $artist->name = $data['name'];
+        $artist->slug = str_replace('-', ' ', strtolower($data['name']));
         $artist->birth_date = $data['birth_date'];
         $artist->death_date = $data['death_date'];
         $artist->nationality = $data['nationality'];
@@ -110,6 +111,7 @@ class ArtistController extends Controller
         $data = $request->all();
 
         $artist->name = $data['name'];
+        $artist->slug = str_replace('-', ' ', strtolower($data['name']));
         $artist->birth_date = $data['birth_date'];
         $artist->death_date = $data['death_date'];
         $artist->nationality = $data['nationality'];

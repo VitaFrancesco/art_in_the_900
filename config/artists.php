@@ -350,12 +350,6 @@ return [
         "nationality" => "Italiana"
     ],
     [
-        "name" => "Sandro Chia",
-        "birth_date" => "1946-04-20",
-        "biography" => "Sandro Chia è uno degli artisti principali della Transavanguardia italiana. Il suo stile figurativo e colorato recupera la tradizione pittorica europea, fondendola con riferimenti mitici, letterari e simbolici. Le sue opere riflettono un ritorno all'espressività e alla soggettività dell'artista dopo le sperimentazioni concettuali. Ha esposto nelle principali biennali e musei del mondo.",
-        "nationality" => "Italiana"
-    ],
-    [
         "name" => "Richard Anuszkiewicz",
         "birth_date" => "1930-05-23",
         "death_date" => "2020-05-19",
@@ -380,13 +374,6 @@ return [
         "birth_date" => "1931-02-09",
         "death_date" => "2018-11-28",
         "biography" => "Robert Morris è stato un artista e teorico americano, noto per le sue sculture minimaliste e le installazioni concettuali. Le sue opere spesso utilizzano materiali industriali e forme geometriche semplici, esplorando la relazione tra oggetto, spazio e spettatore.",
-        "nationality" => "Statunitense"
-    ],
-    [
-        "name" => "Anne Truitt",
-        "birth_date" => "1921-03-16",
-        "death_date" => "2004-12-23",
-        "biography" => "Anne Truitt è stata una scultrice americana associata al minimalismo. Le sue sculture verticali, dipinte a mano con colori delicati, combinano la semplicità formale con una sensibilità personale, esplorando temi di memoria e percezione.",
         "nationality" => "Statunitense"
     ],
     [
@@ -423,22 +410,9 @@ return [
         "nationality" => "Italiana"
     ],
     [
-        "name" => "Luciano Fabro",
-        "birth_date" => "1936-11-20",
-        "death_date" => "2007-06-22",
-        "biography" => "Luciano Fabro è stato un artista italiano legato all'Arte Povera. Le sue sculture e installazioni utilizzano materiali diversi, spesso combinando elementi naturali e industriali, per esplorare concetti di identità, spazio e percezione.",
-        "nationality" => "Italiana"
-    ],
-    [
         "name" => "Giulio Paolini",
         "birth_date" => "1940-11-05",
         "biography" => "Giulio Paolini è un artista italiano associato all'Arte Povera e all'arte concettuale. Le sue opere riflettono sulla natura dell'arte stessa, utilizzando riferimenti storici e autoriflessivi per esplorare il ruolo dell'artista e dell'opera.",
-        "nationality" => "Italiana"
-    ],
-    [
-        "name" => "Francesco Clemente",
-        "birth_date" => "1952-03-23",
-        "biography" => "Francesco Clemente è un artista italiano noto per il suo stile pittorico emotivamente intenso e simbolico. Attivo sia in Italia che a New York, Clemente ha fuso influenze occidentali e orientali nelle sue opere, spesso esplorando temi come la spiritualità, l'identità e il corpo umano. Le sue pitture, spesso realizzate su larga scala, si caratterizzano per l'uso di colori vivaci e per la combinazione di figurazione e astrazione, rendendolo uno dei protagonisti della scena neo-espressionista internazionale.",
         "nationality" => "Italiana"
     ],
     [
@@ -457,12 +431,6 @@ return [
         "name" => "Nicola De Maria",
         "birth_date" => "1954-12-06",
         "biography" => "Nicola De Maria è un artista italiano legato al movimento della Transavanguardia. Il suo stile si distingue per l'uso di colori vivaci e per una pittura astratta dal forte impatto emotivo e simbolico. De Maria ha spesso concepito l'arte come esperienza spirituale e rigeneratrice, creando ambienti immersivi in cui il colore assume un ruolo centrale. Il suo lavoro si muove tra lirismo e gesto pittorico, offrendo una visione personale e poetica della pittura contemporanea.",
-        "nationality" => "Italiana"
-    ],
-    [
-        "name" => "Sandro Chia",
-        "birth_date" => "1946-04-20",
-        "biography" => "Sandro Chia è un pittore e scultore italiano che ha avuto un ruolo chiave nel movimento della Transavanguardia. Il suo lavoro fonde elementi classici e mitologici con uno stile figurativo energico e carico di simbolismo. Le sue opere si caratterizzano per la teatralità delle composizioni, la ricchezza cromatica e la continua rielaborazione della tradizione pittorica europea. Chia ha esposto ampiamente a livello internazionale, contribuendo a riaffermare il ruolo della pittura negli anni '80.",
         "nationality" => "Italiana"
     ],
     [

@@ -17,10 +17,11 @@ class MovementTableSeeder extends Seeder
         foreach ($movementsArray as $movement) {
             $newMovement = new Movement();
             $newMovement->name = $movement['name'];
+            $newMovement->slug = str_replace(' ', '-', strtolower($movement['name']));
             $newMovement->description = $movement['description'];
             $newMovement->start_year = $movement['start_year'];
             $newMovement->end_year = $movement['end_year'];
-            $newMovement->image = 'movements/' . str_replace([':', ',', '?'], '', str_replace(' ', '_', strtolower($movement['name']))) . '.png';
+            $newMovement->image = 'movements/' . str_replace([':', ',', '?','#','/'], '', str_replace(' ', '_', strtolower($movement['name']))) . '.png';
             $newMovement->save();
             
             $newMovement->artists()->attach($movement['artists']);

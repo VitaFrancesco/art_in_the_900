@@ -32,10 +32,10 @@ class MovementController extends Controller
                         $workQuery->where('title', 'like', "%{$search}%");
                     });
         })
-        ->paginate(10)
+        ->paginate(12)
         ->appends(['search' => $search]);
         } else {
-            $movements = Movement::with(['artists', 'works'])->paginate(10);
+            $movements = Movement::with(['artists', 'works'])->paginate(12);
         }
         $entity = $movements;
         return view('movements.index', compact('movements', 'indexRoute', 'createRoute', 'search', 'entity'));
@@ -61,6 +61,7 @@ class MovementController extends Controller
         $movement = new Movement();
 
         $movement->name = $data['name'];
+        $movement->slug = str_replace('-', ' ', strtolower($data['name']));
         $movement->start_year = $data['start_year'];
         $movement->end_year = $data['end_year'];
         $movement->description = $data['description'];
@@ -110,6 +111,7 @@ class MovementController extends Controller
         $data = $request->all();
 
         $movement->name = $data['name'];
+        $movement->slug = str_replace('-', ' ', strtolower($data['name']));
         $movement->start_year = $data['start_year'];
         $movement->end_year = $data['end_year'];
         $movement->description = $data['description'];

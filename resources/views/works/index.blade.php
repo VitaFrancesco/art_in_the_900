@@ -9,8 +9,9 @@
             <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3 p-3">
                 <a href="{{ route('works.show', $work) }}" class="h-100">
                     <div class="card h-100 overflow-hidden">
-                        {{-- <img class="card-image-top" src="{{ asset('storage/' . $work->image) }}"
-                        alt="{{ 'imamagine di ' . $work->title }}"> --}}
+                        <div class="card-image-top">
+                            <img src="{{ asset('storage/' . $work->image) }}" alt="{{ 'imamagine di ' . $work->title }}">
+                        </div>
                         <div class="card-body d-flex flex-column">
                             <div class="flex-grow-1 position-relative z-1 mb-2">
                                 <h5 class="card-title">{{ $work->title }}</h5>

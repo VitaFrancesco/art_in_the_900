@@ -32,10 +32,10 @@ class WorkController extends Controller
                         $movementQuery->where('name', 'like', "%{$search}%");
                     });
         })
-        ->paginate(10)
+        ->paginate(12)
         ->appends(['search' => $search]);
         } else {
-            $works = Work::with(['artist', 'movement'])->paginate(10);
+            $works = Work::with(['artist', 'movement'])->paginate(12);
         }
         $entity = $works;
         return view('works.index', compact('works', 'indexRoute', 'createRoute', 'search', 'entity'));
@@ -62,6 +62,7 @@ class WorkController extends Controller
         $work = new Work();
 
         $work->title = $data['title'];
+        $work->slug = str_replace('-', ' ', strtolower($data['title']));
         $work->museum = $data['museum'];
         $work->creation_year = $data['creation_year'];
         $work->technique = $data['technique'];
@@ -112,6 +113,7 @@ class WorkController extends Controller
         $data = $request->all();
 
         $work->title = $data['title'];
+        $work->slug = str_replace('-', ' ', strtolower($data['title']));
         $work->museum = $data['museum'];
         $work->creation_year = $data['creation_year'];
         $work->technique = $data['technique'];

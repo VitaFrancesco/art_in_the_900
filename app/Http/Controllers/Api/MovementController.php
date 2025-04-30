@@ -24,9 +24,9 @@ class MovementController extends Controller
                             $workQuery->where('title', 'like', "%{$search}%");
                         });
                 })
-                ->paginate(10);
+                ->paginate(12);
         } else {
-            $movements = Movement::with('artists', 'works')->paginate(10);
+            $movements = Movement::with('artists', 'works')->paginate(12);
         }
         
         $movements->getCollection()->transform(function ($movement) {
@@ -40,7 +40,12 @@ class MovementController extends Controller
         ]);
     }
 
-    public function show (Movement $movement) {
+    public function show ($movement) {
+        if (is_numeric($movement)) {
+            $movement = Movement::find($movement);
+        } else {
+            $movement = Movement::where('slug', $movement)->firstOrFail();
+        }
         $movement->load(['artists', 'works']);
         $movement->image_url = $movement->image_url;
 
