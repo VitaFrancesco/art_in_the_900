@@ -40,7 +40,7 @@ L’obiettivo è offrire una navigazione semplice e intuitiva, con contenuti acc
 - [React](https://reactjs.org/)
 - [Axios](https://axios-http.com/)
 - [React Router](https://reactrouter.com/)
-- [Bootstrap / Tailwind / CSS Modules] (in base al tuo setup)
+- [Bootstrap](https://getbootstrap.com/)
 - Backend: [Laravel 10+](https://laravel.com) tramite API REST
 
 ---
