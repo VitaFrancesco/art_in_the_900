@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://laravel.com/img/logomark.min.svg" width="100" alt="Laravel Logo">
+  <img src="https://raw.githubusercontent.com/VitaFrancesco/art_in_the_900/6938bf653c9a5fdf31e09003900726a7ae8afb6f/public/preview.png" width="100" alt="Laravel Logo">
 </p>
 
 <h1 align="center">Arte '900 – Backoffice</h1>
