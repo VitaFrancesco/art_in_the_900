@@ -21,4 +21,8 @@ Route::resource('/works', WorkController::class)->middleware(['auth', 'verified'
 Route::resource('/movements', MovementController::class)->middleware(['auth', 'verified']);
 Route::resource('/artists', ArtistController::class)->middleware(['auth', 'verified']);
 
+Route::get('/esercizio',function () {
+    return view('esercizio');
+});
+
 require __DIR__.'/auth.php';
